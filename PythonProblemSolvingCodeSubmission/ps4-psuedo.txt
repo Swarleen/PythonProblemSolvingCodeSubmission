@@ -1,0 +1,30 @@
+Assignment: ps4 - pseudo
+Name: Swarleen Bhamra
+Time Spent: 3 hours (approx)
+
+Your algorithms should be plain English explanations for the steps your program will take to solve these problems.
+
+Write out your algorithm for Problem 2 here:
+Aim: To decode the encrypted text.
+
+1. We start by making a list from the given text file.
+2. Settting the number of words as zero.
+3. Initialise the best shift with zero, where shift will stay between 0 and 27.
+	And call out the function apply_shift for the message.
+4. Using " .split " to split the text into individual words.
+5. We have to count the number of valid words in the wordlist and, (here we will use if-else statement)
+	if the valid words are more than the total number of real words then,
+		keep the no. of valid words 
+6. Set the best shift to the recent shift.
+7. Increment the recent shift by 1.
+8. Return the best shift.
+
+Write out your algorithm for Problem 4 here:
+Aim: Using multi layer shift 
+
+1. The first shift is for the first word of the text.
+2. the second shoft starts from the second word.
+3. Here shifts are layered, which means:
+	the second shift will work from where the first shoft ends, i.e. the first word.
+	and if we talk about the thir shift it will work from where the seconf sift ends.
+4. apply reverse and we can subtract 3
